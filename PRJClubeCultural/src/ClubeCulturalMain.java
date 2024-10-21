@@ -15,7 +15,7 @@ public class ClubeCulturalMain {
         CCMeth CC = new CCMeth();
         int opc = 0;
         while (opc != 9) {            
-            opc = Integer.parseInt(JOptionPane.showInputDialog("1 - Novo Empréstimo  \n2 - Cadastrar HQs \n3 - Cadastro de Amiguinhos \n4 - Amiguinhos  \n9 - Fim"));
+            opc = Integer.parseInt(JOptionPane.showInputDialog("1 - Cadastro de Amiguinhos  \n2 - Cadastrar HQs \n3 - Novo Empréstimo \n9 - Finalizar"));
             switch (opc) {
                 case 1:
                     cFriends = CC.FCadastro(cFriends);
@@ -24,11 +24,6 @@ public class ClubeCulturalMain {
                     cComics = CC.FCadastroHQ(cComics);
                     break;
                 case 3:
-                    //JOptionPane.showMessageDialog(null, "Novo Cadastro");
-                    
-                    break;
-                case 4:
-                    //JOptionPane.showMessageDialog(null, "Amiguinhos");
                     
                     break;                    
                 case 9:

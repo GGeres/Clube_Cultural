@@ -12,11 +12,11 @@ public class CCMeth {
         String fileName = "ArquivoClubeCultural.txt";
         BufferedWriter save = new BufferedWriter(new FileWriter(fileName));
         
-        for(i = 0; i < 1; i++){
+        for(i = 0; i < 4; i++){
             cAmigos[i] = new CadAmigos();
         }
         
-        for(i = 0; i < 1; i++){
+        for(i = 0; i < 4; i++){
             cAmigos[i].FriendName = JOptionPane.showInputDialog("Qual o nome do Amiguinho?");
                 save.write(cAmigos[i].FriendName);
                 save.newLine();
@@ -41,10 +41,23 @@ public class CCMeth {
         String fileName = "ArquivoHQ.txt";
         BufferedWriter save = new BufferedWriter(new FileWriter(fileName));
         
-        for(i = 0; i < 1; i++){
+        for(i = 0; i < 4; i++){
             cHQ[i] = new CadHQ();
         }
         
-        
+        for(i = 0; i < 4; i++){
+            cHQ[i].nEdition = Integer.parseInt(JOptionPane.showInputDialog("Número da Edição"));
+                save.write(Integer.toString(cHQ[i].nEdition));
+                save.newLine();
+            cHQ[i].YearEdition = Integer.parseInt(JOptionPane.showInputDialog("Ano de Publicação"));
+                save.write(Integer.toString(cHQ[i].YearEdition));
+                save.newLine();
+            cHQ[i].HQName = JOptionPane.showInputDialog("Nome da HQ");
+                save.write(cHQ[i].HQName);
+                save.newLine();
+        }
+        System.out.println("GRAVACAO FEITA COM SUCESSO ");
+        save.close();
+        return cHQ;
     }
 }
