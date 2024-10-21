@@ -10,8 +10,8 @@ import javax.swing.JOptionPane;
 public class ClubeCulturalMain {
     
     public static void main(String[] args) throws IOException {
-        CadAmigos[] cFriends = new CadAmigos[3];
-        CadHQ[] cComics = new CadHQ[3];
+        CadAmigos[] cFriends = new CadAmigos[5];
+        CadHQ[] cComics = new CadHQ[5];
         CCMeth CC = new CCMeth();
         int opc = 0;
         while (opc != 9) {            
